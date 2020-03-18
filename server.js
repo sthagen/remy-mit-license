@@ -9,7 +9,7 @@ const express = require('express')
 const minify = require('express-minify')
 const favicon = require('serve-favicon')
 const postcssMiddleware = require('postcss-middleware')
-const tempdir = require('temp-dir')
+const tempDirectory = require('temp-dir')
 const path = require('path')
 
 // Server
@@ -19,7 +19,7 @@ const PORT = process.env.PORT || 8080
 const app = express()
 app.use(
   minify({
-    cache: tempdir
+    cache: tempDirectory
   })
 )
 app.use(favicon(path.join(__dirname, 'favicon.ico')))
@@ -48,7 +48,7 @@ app.use(
 // Middleware
 
 // CORS
-app.use(require('./middleware/cors'))
+app.use(require('cors'))
 // Parse URL-encoded bodies (as sent by HTML forms)
 app.use(
   express.urlencoded({

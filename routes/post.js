@@ -3,7 +3,8 @@ const path = require('path')
 const btoa = require('btoa')
 const { version } = require(path.join(__dirname, '..', 'package.json'))
 const size = require('any-size')
-const github = require('@octokit/rest')({
+const { Octokit } = require('@octokit/rest')
+const github = new Octokit({
   // GitHub personal access token
   auth: process.env.github_token,
   // User agent with version from package.json
@@ -17,8 +18,10 @@ const { validDomainId } = require('./utils')
 function getUserData ({ query, body }) {
   // If query parameters provided
   if (size(query) > 0) return query
+
   // If the data parsed as {'{data: "value"}': ''}
   if (size(body) === 1 && !Object.values(body)[0]) return JSON.parse(Object.keys(body)[0])
+
   // Fallback
   return body
 }
@@ -26,6 +29,7 @@ function getUserData ({ query, body }) {
 // HTTP POST API
 module.exports = async (req, res) => {
   const { hostname } = req
+
   // Get different parts of hostname (example: remy.mit-license.org -> ['remy', 'mit-license', 'org'])
   const params = hostname.split('.')
 
