@@ -1,8 +1,8 @@
-# A permalink for your MIT License ![Travis CI Status](https://img.shields.io/travis/remy/mit-license/master.svg?style=for-the-badge)
+# A permalink for your MIT License
 
 I always forget to add a `LICENSE` file to my projects, so I wanted to link to a single resource that would always be up to date and would always have my details online.
 
-Why keep this to myself, there are two ways to create your _own_ MIT license page:
+Why keep this to myself, there are three ways to create your _own_ MIT license page:
 
 1.  Use the generator tool (easiest)
 2.  Make a request to the API (details below)
@@ -199,6 +199,7 @@ Current available themes:
 * material - [preview](http://ahaasler.github.io/mit-license-material-theme/) (by [@ahaasler](https://github.com/ahaasler)). *Available colours: blue gray (default), red, pink, purple, deep purple, indigo, blue, light blue, cyan, teal, green, light green, lime, yellow, amber, orange, deep orange, brown and grey. To use a specific colour, add it as a dash-separated suffix on the theme name, such as `material-deep-orange`.*
 * hmt-blue - [preview](https://jsbin.com/naqorar/) (by [@J2TeaM](https://github.com/J2TeaM))
 * dusk - [preview](https://output.jsbin.com/giqivoh) (by [@georapbox](https://github.com/georapbox))
+* dusk-textured - [preview](https://output.jsbin.com/xakudav) (by [@georapbox](https://github.com/georapbox) and [@robfrawley](https://github.com/robfrawley))
 * 8bits - [preview](https://matricali.github.io/mit-license-8bits-theme/) (by [@matricali](https://github.com/matricali)). *Available colours: monochrome, monochrome-white, monochrome-blue-white, monochrome-green, monochrome-amber. To use a specific colour, add it as a dash-separated suffix on the theme name, such as `8bits-monochrome`.*
 * hacker - [preview](https://tommy.mit-license.org/) (by [@TommyPujol06](https://github.com/TommyPujol06))
 * anon-pro - [preview](https://b.mit-license.org) (by [@bbbrrriiiaaannn](https://github.com/bbbrrriiiaaannn))
